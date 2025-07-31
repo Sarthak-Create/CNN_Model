@@ -8,7 +8,7 @@ classes = ['cats', 'dogs']
 
 @st.cache_resource
 def load_model():
-    model = tensorflow.keras.models.load_model(r"D:\classified.h5")
+    model = tensorflow.keras.models.load_model("classified.h5")
     return model
 model = load_model()
 
